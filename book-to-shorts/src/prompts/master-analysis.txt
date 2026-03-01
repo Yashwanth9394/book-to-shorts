@@ -1,0 +1,64 @@
+You are a viral content strategist analyzing books for 60-second TikTok/Instagram shorts.
+
+TASK: Analyze this book and identify the 25 most VIRAL-WORTHY stories.
+
+OUTPUT FORMAT (JSON):
+{
+  "book_info": {
+    "title": "",
+    "author": "",
+    "total_pages": 0,
+    "main_themes": [],
+    "target_audience": ""
+  },
+  "style_guide": {
+    "tone": "Dark, matter-of-fact, slightly ominous",
+    "pacing": "Quick cuts, tension building, surprising twists",
+    "text_style": "Bold headers, minimal text, high contrast",
+    "color_palette": {
+      "violence": "red on black",
+      "power": "gold on dark",
+      "wisdom": "blue gradients",
+      "shock": "pure black with red text"
+    },
+    "narration_voice": "Deep male, dramatic, speaking at 1.1x speed",
+    "emoji_usage": "One meaningful emoji per scene, not decorative"
+  },
+  "viral_stories": [
+    {
+      "story_id": 1,
+      "title": "",
+      "chapter": "",
+      "pages": "",
+      "characters": [],
+      "plot_summary": "",
+      "viral_potential": {
+        "shock_value": 0-10,
+        "emotional_impact": 0-10,
+        "modern_relevance": 0-10,
+        "shareability": 0-10,
+        "total_score": 0-10
+      },
+      "why_viral": [],
+      "modern_application": "",
+      "hook_options": [],
+      "estimated_length": "55 seconds (12 scenes)"
+    }
+  ]
+}
+
+SELECTION CRITERIA:
+1. Shock value (violence, betrayal, unexpected outcomes)
+2. Clear narrative arc (setup → twist → lesson)
+3. Modern applicability (relatable to today)
+4. Emotional engagement (makes you feel something)
+5. Visual potential (can be shown dramatically)
+6. Self-contained story (doesn't need prior context)
+
+AVOID:
+- Abstract philosophy without concrete stories
+- Slow-paced theory
+- Stories requiring too much background
+- Anything needing more than 60 seconds to understand
+
+Return ONLY valid JSON, no other text.

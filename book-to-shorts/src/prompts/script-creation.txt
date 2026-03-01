@@ -1,0 +1,96 @@
+Using the book and the MASTER ANALYSIS below, create ONE complete 60-second viral short.
+
+MASTER CONTEXT:
+{PASTE ENTIRE MASTER ANALYSIS HERE}
+
+STORY TO ADAPT:
+{PASTE SPECIFIC STORY DATA HERE}
+
+OUTPUT FORMAT (JSON):
+{
+  "short_id": 1,
+  "title": "",
+  "category": "",
+  "book_reference": "",
+  "timeline": {
+    "total_duration_ms": 55000,
+    "total_duration_display": "00:00:55"
+  },
+  "scenes": [
+    {
+      "scene_number": 1,
+      "scene_type": "HOOK",
+      "duration_ms": 3000,
+      "start_time_ms": 0,
+      "end_time_ms": 3000,
+      "visuals": {
+        "background": "bg-black",
+        "emoji": "🍷",
+        "emoji_animation": "bounce",
+        "text_on_screen": "He murdered his uncle\nat a dinner party",
+        "text_color": "white",
+        "text_size": "text-5xl",
+        "image_needed": false,
+        "image_prompt": ""
+      },
+      "audio": {
+        "narration_text": "He murdered his uncle at a dinner party",
+        "narration_emphasis": ["murdered", "dinner party"],
+        "narration_pace": "dramatic pause after 'murdered'",
+        "background_music": "suspense-rising.mp3",
+        "music_volume": 0.15
+      },
+      "metadata": {
+        "importance_score": 10,
+        "can_be_cut": false,
+        "transition_to_next": "quick-fade"
+      }
+    }
+  ],
+  "assets_needed": {
+    "images": [],
+    "background_music": []
+  },
+  "metadata": {
+    "total_word_count": 0,
+    "hashtags": [],
+    "best_platforms": ["TikTok", "Instagram Reels"],
+    "optimal_post_time": "8:00 PM EST"
+  }
+}
+
+CRITICAL REQUIREMENTS:
+1. Exactly 10-12 scenes
+2. Total duration: 50-65 seconds
+3. First scene MUST be HOOK (3 seconds max)
+4. Last scene MUST be CTA (call to action)
+5. Scene types: HOOK, INTRODUCTION, STORY, CONFLICT, CLIMAX, LESSON, APPLICATION, CTA
+6. Each scene is self-descriptive for visual generation
+7. Narration text must be natural spoken language
+8. Match the style_guide tone and pacing
+
+SCENE TIMING GUIDELINES:
+- HOOK: 2-3 seconds (grab attention immediately)
+- INTRODUCTION: 3-5 seconds (set the context)
+- STORY: 4-6 seconds per scene (build the narrative)
+- CONFLICT: 5-7 seconds (create tension)
+- CLIMAX: 5-8 seconds (the twist/revelation)
+- LESSON: 4-6 seconds (the takeaway)
+- APPLICATION: 4-6 seconds (modern relevance)
+- CTA: 3-4 seconds (like/follow prompt)
+
+VISUAL GUIDELINES:
+- Use high-contrast colors for readability on mobile
+- Keep text_on_screen concise (max 2 lines)
+- Choose emojis that add meaning, not decoration
+- For image_needed=true, provide specific, visual image_prompt
+- Background can be: solid color, gradient, or "image"
+
+AUDIO GUIDELINES:
+- Narration should sound natural when spoken aloud
+- Use narration_emphasis to highlight key words
+- Keep narration_pace notes brief and actionable
+- Background music volume: 0.10-0.20 (let voice dominate)
+- Music should match scene emotion
+
+Return ONLY valid JSON, no other text.

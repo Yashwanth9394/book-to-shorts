@@ -1,0 +1,41 @@
+{
+  "name": "book-to-viral-shorts",
+  "version": "1.0.0",
+  "description": "Automatically turn books into viral 60-second TikTok shorts",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "analyze": "node scripts/1-analyze-book.js",
+    "create-scripts": "node scripts/2-create-scripts.js",
+    "generate-assets": "node scripts/3-generate-assets.js",
+    "render": "node scripts/4-render-videos.js",
+    "validate": "node scripts/5-validate.js",
+    "full-pipeline": "npm run analyze && npm run create-scripts && npm run generate-assets && npm run render"
+  },
+  "keywords": [
+    "video",
+    "tiktok",
+    "shorts",
+    "ai",
+    "automation"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.20.0",
+    "elevenlabs": "^0.8.1",
+    "dotenv": "^16.0.3",
+    "pdf-parse": "^1.1.1",
+    "node-fetch": "^3.3.2",
+    "fs-extra": "^11.1.0",
+    "remotion": "^4.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "cli-progress": "^3.12.0",
+    "chalk": "^5.3.0"
+  },
+  "devDependencies": {
+    "@remotion/cli": "^4.0.0",
+    "eslint": "^8.0.0"
+  }
+}
